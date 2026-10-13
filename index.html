@@ -309,7 +309,73 @@ a{color:var(--rose)}
 @media(prefers-reduced-motion:reduce){.reveal-pending{opacity:1;transform:none}}
 </style>
 <noscript><style>@media (max-width:899px){.menu-toggle{display:none}.nav{display:flex;position:static;box-shadow:none;padding-inline:0}.site-header .container{flex-wrap:wrap;padding-block:12px}}</style></noscript>
-</head>
+<style>
+/* Refino editorial — Rô Cortinas e Persianas */
+:root{--cream:#FFF9F5;--blush:#F5E4E5;--sand:#E5C8CD;--rose:#88465E;--rose-deep:#693449;--ink:#392F32;--muted:#69565C;--radius-lg:22px}
+body{background:#FFF9F5} html{scroll-padding-top:84px}
+.site-header{background:rgba(255,249,245,.95);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.site-header .container{max-width:1260px}
+.brand__ro{color:var(--rose);letter-spacing:-.065em;font-size:1.85rem}
+.brand__name{letter-spacing:.015em}
+.nav a:not(.btn){position:relative}
+.nav a:not(.btn):hover{color:var(--rose)}
+.btn{border-radius:999px;font-weight:600;box-shadow:0 8px 18px rgba(105,52,73,.14);transition:transform .25s ease,background-color .25s ease,box-shadow .25s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(105,52,73,.20)}
+.btn--outline:hover{box-shadow:none}
+.hero{position:relative;background:radial-gradient(ellipse at 82% 28%,#ECC7CB 0,transparent 49%),linear-gradient(122deg,#FFF8F4 0%,#F8E9E5 53%,#EED8D5 100%);padding-block:clamp(58px,7vw,106px) clamp(72px,9vw,120px)}
+.hero::before{content:"";position:absolute;width:380px;height:380px;border:1px solid #AD7B853F;border-radius:50%;top:-270px;left:-120px;pointer-events:none}
+.hero__grid{position:relative;z-index:1}
+.hero h1{font-size:clamp(2.45rem,5.25vw,4.45rem);line-height:1.105;letter-spacing:-.048em;color:#502F3C}
+.hero .lead{font-size:clamp(1.03rem,1.48vw,1.2rem);color:#665159}
+.eyebrow,.choice-kicker{font-size:.75rem;font-weight:700;color:#925166;letter-spacing:.16em;text-transform:uppercase}
+.hero__highlights{display:flex;flex-wrap:wrap;gap:7px;margin-top:29px}
+.hero__highlights span{display:inline-flex;align-items:center;background:#FFFDF9B8;border:1px solid #DDB9C2;padding:7px 12px;border-radius:999px;font-size:.78rem;font-weight:600;color:#754B59}
+.hero__media{transform:none;border:7px solid #FFFDF8;box-shadow:0 28px 65px rgba(78,45,55,.17);border-radius:28px;position:relative}
+.hero__media>img{object-position:center center}
+.showcase-note{background:#714256;color:#fff;border-top:1px solid #ffffff40}
+.showcase-note__inner{display:flex;gap:20px;align-items:center;justify-content:space-between;padding-block:18px}
+.showcase-note__mark{font-size:2rem;color:#F6D9C6;line-height:1}
+.showcase-note__inner p{flex:1;font-size:.94rem;line-height:1.45}
+.showcase-note__inner a{font-size:.9rem;color:#fff;text-decoration:underline;text-underline-offset:5px;white-space:nowrap;font-weight:700}
+#produtos{background:linear-gradient(180deg,#FFF9F5,#F9F0EE)}
+#produtos .section-head{margin-bottom:29px}
+#produtos .section-head p:not(.choice-kicker){margin-top:16px;color:var(--muted)}
+.product{background:#FFFDFB;border:1px solid #E5C6CB;border-radius:23px;box-shadow:0 12px 35px #58303E13}
+.product .media{border-radius:16px;overflow:hidden}
+.product .media img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.product[data-position="center"]:hover .media img{transform:scale(1.04)}
+.is-carousel .product[data-position="center"]{border-color:#A2687C;box-shadow:0 22px 48px #58303E25}
+.carousel-controls button{border:1px solid #B58A97;transition:background .2s ease,transform .2s ease}
+.carousel-controls button:hover{transform:translateY(-2px)}
+.carousel-hint{font-size:.88rem}
+.service-strip{background:#F2E1E0;border:1px solid #DFBCC4;border-radius:18px;padding:24px 29px}
+.ro-choice{background:#FFF9F5}
+.ro-choice .section-head{margin-inline:auto;text-align:center;max-width:710px}
+.ro-choice .section-head p:not(.choice-kicker){margin-top:15px;color:var(--muted)}
+.choice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.choice-card{background:linear-gradient(150deg,#FFFDFC,#F5E6E5);border:1px solid #E7CCCF;border-radius:22px;padding:30px;box-shadow:0 6px 24px #58303E08;transition:transform .3s ease,box-shadow .3s ease}
+.choice-card:hover{transform:translateY(-5px);box-shadow:0 15px 30px #58303E15}
+.choice-symbol{display:grid;place-items:center;width:50px;height:50px;background:#7D465E;color:#fff;font-size:1.35rem;border-radius:16px;margin-bottom:24px}
+.choice-card h3{font-size:1.25rem;margin-bottom:10px;color:#553643}
+.choice-card p{color:var(--muted);font-size:.99rem}
+.feature{background:#F8F0EC;border-color:#BA8A9A;border-radius:16px;padding:25px;transition:transform .25s ease,background .25s}
+.feature:hover{transform:translateY(-4px);background:#F7E7E6}
+#como-funciona{background:linear-gradient(120deg,#F3E1E1,#F4E7DD)}
+.step__n{background:#78445A;box-shadow:0 6px 16px #78445A20}
+.faq details{transition:background .2s}
+.faq details[open]{background:#FCF2EF}
+.faq summary{padding-inline:12px}
+.faq details p{padding-left:12px}
+.cta-final{background:linear-gradient(115deg,#593044,#824660 60%,#A46570)}
+.site-footer{background:#F6ECE9}
+.wa-float{background:#78445A;box-shadow:0 8px 25px #4F263C32}
+.reveal-pending{transform:translateX(-20px)}
+.feature:nth-child(2n).reveal-pending,.choice-card:nth-child(2n).reveal-pending{transform:translateX(20px)}
+@media(max-width:900px){.hero__media{max-width:650px;margin-inline:auto}.nav{background:#FFF9F5}}
+@media(max-width:760px){.choice-grid{grid-template-columns:1fr}.choice-card{padding:23px}.showcase-note__inner{gap:12px}.showcase-note__inner a{font-size:.84rem}}
+@media(max-width:559px){.wa-float{left:auto;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));border-radius:999px;min-height:52px;padding:0 18px;font-size:.88rem}.hero{padding-block:43px 62px}.hero h1{font-size:clamp(2.13rem,9vw,3rem)}.hero__highlights{margin-top:22px;gap:6px}.hero__highlights span{font-size:.72rem;padding:6px 9px}.hero__media{border-width:5px;border-radius:18px}.showcase-note__inner{align-items:flex-start}.showcase-note__mark{font-size:1.5rem}.showcase-note__inner a{display:none}.section{padding-block:64px}.products.is-carousel{min-height:unset}.is-carousel .product{width:min(84%,370px)}.carousel-controls{gap:10px}.choice-grid{gap:12px}.wa-float{border-radius:16px}}
+@media(prefers-reduced-motion:reduce){.choice-card:hover,.feature:hover,.btn:hover{transform:none}}
+</style></head>
 <body>
 <svg aria-hidden="true" focusable="false" height="0" style="position:absolute" width="0">
 <symbol id="i-chat" viewbox="0 0 24 24"><path d="M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H10l-5 4v-4H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"></path><path d="M8 10h8M8 13h5"></path></symbol>
@@ -341,11 +407,12 @@ a{color:var(--rose)}
 <div class="container hero__grid">
 <div class="hero__text"><p class="eyebrow">ATENDIMENTO EM DOMICÍLIO · ITABIRITO</p>
 <h1 id="hero-title">Cortinas e persianas sob medida em Itabirito.</h1>
-<p class="lead">Sou Rosângela. Vou até sua casa em Itabirito, confiro as medidas e preparo um orçamento pensado para o seu ambiente. Vamos escolher cortinas e persianas que combinem com a sua rotina?</p>
+<p class="lead">Cada janela tem seu jeito de transformar um ambiente. Sou Rosângela e ajudo você a escolher cortinas e persianas sob medida, com atendimento e medição na sua casa em Itabirito.</p>
 <div class="actions">
 <a class="btn" data-wa="Olá, Rosângela! Moro em Itabirito e gostaria de agendar uma visita para medir minhas janelas e receber um orçamento." href="https://wa.me/5531986865015?text=Ol%C3%A1%2C%20Ros%C3%A2ngela%21%20Moro%20em%20Itabirito%20e%20gostaria%20de%20agendar%20uma%20visita%20para%20medir%20minhas%20janelas%20e%20receber%20um%20or%C3%A7amento." rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><use href="#i-chat"></use></svg>Agendar visita pelo WhatsApp</a>
 <a class="link-arrow" href="#produtos">Conhecer os produtos</a>
 </div>
+<div class="hero__highlights" aria-label="Informações do atendimento"><span>✦ Sob medida</span><span>⌂ Visita em domicílio</span><span>◌ Itabirito · MG</span></div>
 </div>
 <!-- Para usar uma fotografia: preencha CONFIG.imagens.hero no script (final do arquivo). -->
 <div class="media hero__media" data-eager="" data-img="hero">
@@ -370,11 +437,12 @@ a{color:var(--rose)}
 </div>
 </div>
 </section>
+<div class="showcase-note" role="note"><div class="container showcase-note__inner"><span class="showcase-note__mark" aria-hidden="true">✧</span><p><strong>Feito para o seu espaço.</strong> A escolha começa pela luz, pela privacidade e pelo estilo de cada ambiente.</p><a href="#produtos" aria-label="Ver opções de cortinas e persianas">Explorar opções <span aria-hidden="true">↗</span></a></div></div>
 <!-- 3. PRODUTOS E SERVIÇOS -->
 <section aria-labelledby="produtos-title" class="section" id="produtos">
 <div class="container">
 <div class="section-head">
-<h2 id="produtos-title">Encontre a solução para o seu espaço.</h2>
+<p class="choice-kicker">CORTINAS · PERSIANAS · BLACKOUT</p><h2 id="produtos-title">Encontre a solução para o seu espaço.</h2><p>Escolha um modelo para conhecer seus benefícios e conversar sobre medidas, tecidos e acabamento.</p>
 </div>
 <div aria-label="Modelos de cortinas e persianas" class="products">
 <article class="product">
@@ -454,6 +522,7 @@ a{color:var(--rose)}
 </div>
 </div>
 </section>
+<section class="section ro-choice" id="inspiracao" aria-labelledby="titulo-inspiracao"><div class="container"><div class="section-head"><p class="choice-kicker">PARA CADA NECESSIDADE</p><h2 id="titulo-inspiracao">O que você quer sentir no ambiente?</h2><p>Um bom projeto começa com a função da janela no seu dia a dia.</p></div><div class="choice-grid"><article class="choice-card"><span class="choice-symbol" aria-hidden="true">☀</span><h3>Mais luz natural</h3><p>Escolhas de tecidos e modelos que filtram a claridade sem perder a leveza.</p></article><article class="choice-card"><span class="choice-symbol" aria-hidden="true">◫</span><h3>Mais privacidade</h3><p>Opções para controlar a visão de fora e criar ambientes mais reservados.</p></article><article class="choice-card"><span class="choice-symbol" aria-hidden="true">☾</span><h3>Menos luminosidade</h3><p>Conheça alternativas blackout para quem deseja reduzir a entrada de luz.</p></article></div></div></section>
 <!-- 5. SOBRE -->
 <!-- 6. DIFERENCIAIS -->
 <section aria-labelledby="diferenciais-title" class="section" id="diferenciais">
@@ -784,5 +853,14 @@ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entr
 document.querySelectorAll('.hero__text,.hero__media,.section-head,.products,.carousel-controls,.carousel-hint,.feature,.step,.steps-cta,.faq details,.service-strip,.gallery figure,.gallery-cta,.quote,.cta-final .container,.footer__grid,.footer__legal').forEach(el=>{if(el.closest('[hidden]')||el.closest('.hero'))return;el.classList.add('reveal','reveal-pending');observer.observe(el);});
 }
 })();
-</script></body>
+</script><script>
+(()=>{'use strict';
+const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduced&&'IntersectionObserver'in window){
+ const cards=document.querySelectorAll('.choice-card');
+ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('ro-entered');observer.unobserve(entry.target)}}),{threshold:.10});
+ cards.forEach(card=>{card.classList.add('ro-entrance');observer.observe(card)});
+}
+})();
+</script><style>.ro-entrance{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.ro-entrance.ro-entered{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){.ro-entrance{opacity:1;transform:none}}</style></body>
 </html>
